@@ -1,0 +1,14 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html {
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.15;
+  font-size: -moz-calc(113%);
+  font-size: calc(113%);
+}
+body {
+  margin: 0 auto;
+}

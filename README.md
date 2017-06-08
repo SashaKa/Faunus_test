@@ -1,6 +1,4 @@
 # Faunus_test
-адаптивная верстка для тестового  задания компании Faunus
- адаптивов нет, на ваше усмотрение, главное адекватность использования с телефона.
 	использование BEM 
 	•	Браузеры: IE10+, all modern desktop (Chrome, FF, Opera, Edge, etc), all modern mobile (iOS Safari, Android Browser, Chrome, etc)
 
