@@ -12,28 +12,30 @@
     <div class="site-wrapper">
         <header class="header">
             <div class="header__logo">
-                <img src="img/logo.png" alt="logo" class="header__logo-img">
+                <img src="img/Logo.png" alt="logo" class="header__logo-img">
             </div>
             <div class="header__counter">
                 <span class="counter-body">43,861,630.44</span>
                 <span class="counter-currency">€</span>
-                <div class="counter-description">
-                    <p>Sinds de lancering van ons project verdienden onze gebruikers:</p>
-                </div>
+                <p>Sinds de lancering van ons project verdienden onze gebruikers:</p>
              </div>
              <div class="header__login">
-                 <button class="login-btn">Login</button>
+                 <a href="#" class="login-btn">Login</a>
              </div>
         </header>
         <div class="intro">
-            <div class="intro__video"></div>
+            <div class="intro__video">
+                <video controls>
+                    <source src="#.mp4">
+                </video>
+            </div>
             <div class="intro__form">
-                <p class="offer-title">Voer je e-mailadres in om onmiddellijk toegang te krijgen tot de applicatie:</p>
+                <p class="form-title">Voer je e-mailadres in om onmiddellijk toegang te krijgen tot de applicatie:</p>
                 <div class="intro__form-inputs">
+                    <label class="label" for="user-name">Voer je naam in:</label>
                     <input type="text" id="user-name" class=" input input-user-name">
-                    <label for="user-name">Voer je naam in:</label>
+                    <label class="label" for="e-mail">Voer je e-mailadres in:</label>
                     <input type="text" id="e-mail" class="input input-email">
-                    <label for="e-mail">Voer je e-mailadres in:</label>
                 </div>
                 <button type="submit" class="submit-button">ONTVANG NU GRATIS!</button>
             </div>
@@ -54,6 +56,23 @@
                 <a class="link-support" href="#">support@autogeldmethode.com</a>
             </div>
         </footer>
+        <div class="modal-content">
+            <div class="modal__popup">
+                <img src="" alt="" class="modal__img">
+                <button type="button" class="modal__close-button"></button>
+                <div class="modal__text">
+                    <h2 class="modal__header">STOP!</h2>
+                    <h3 class="modal__offer">ONTVANG JE GESCHENK</h3>
+                    <p class="modal__offer-text">Wacht! Je staat op het punt de kans van je leven te missen!</p>
+                    <p class="modal__offer-subscribe">Vul het formulier in en ontvang de applicatie gratis></p>
+                </div>
+                <form action="" class="modal__form-subscribe">
+                    <input type="text" id="user-email" class="modal__input-email">
+                    <label class="label" for="user-email">Voer je e-mailadres in:</label>
+                    <button type="submit" class="modal__form-button">Verdien geld</button>
+                </form>
+            </div>
+        </div>
     </div>
 </body>
 </html>
