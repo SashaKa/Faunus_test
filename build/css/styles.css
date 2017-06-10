@@ -342,20 +342,24 @@ video {
     padding-bottom: 20px;
   }
 }
-.submit-button {
-  font-size: 22px;
-  font-weight: 400;
+.submit-button,
+.modal__form-button {
   border-radius: 5px;
   background-color: #95c11f;
   color: #fff;
-  margin: 20px 0;
   border: none;
   padding: 10px 15px;
   cursor: pointer;
 }
-.submit-button:hover {
+.submit-button:hover,
+.modal__form-button:hover {
   background-color: #ed1c24;
   color: #fff;
+}
+.submit-button {
+  font-size: 22px;
+  font-weight: 400;
+  margin: 20px 0;
 }
 .disclaimers__list {
   display: -webkit-box;
@@ -483,10 +487,33 @@ video {
 .link-main-site {
   color: #acacac;
 }
+.show-modal-content {
+  display: block;
+}
+.modal__popup {
+  width: 90%;
+  margin: 0 auto;
+  padding-top: 30px;
+  padding-left: 30px;
+  position: absolute;
+}
+@media (min-width: 1024px) and (max-width: 1919px) {
+  .modal__popup {
+    width: 50%;
+    top: -80px;
+    left: 20%;
+  }
+}
+.modal__img {
+  position: absolute;
+  bottom: -3%;
+  left: 50%;
+}
 .modal__header {
   font-size: 60px;
   font-weight: 700;
   color: #ed1c24;
+  text-align: left;
 }
 .modal__offer {
   font-size: 30px;
@@ -496,6 +523,7 @@ video {
 .modal__offer-subscribe {
   font-size: 17px;
   font-weight: 400;
+  width: 50%;
 }
 .modal__form-button {
   font-size: 20px;
@@ -503,10 +531,44 @@ video {
   border-radius: 5px;
   background-color: #ed1c24;
   color: #fff;
+  width: 50%;
 }
-.modal-content {
-  display: none;
+.modal__form-subscribe {
+  background-color: #004f92;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -moz-box-orient: vertical;
+  -moz-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -moz-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+  -moz-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  padding: 30px;
 }
-.show-modal-content {
-  display: block;
+.modal__input-email {
+  width: 50%;
+  border-radius: 5px;
+  padding: 10px 0;
+  border: none;
+  padding: 10px 15px;
+  font-size: 16px;
+  margin: 15px 20px;
+  margin-left: 0;
+}
+.modal__input-email:focus {
+  outline: 1px solid #95c11f;
 }
