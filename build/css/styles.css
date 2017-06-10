@@ -79,6 +79,8 @@ body {
     -moz-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
+    padding: 0 50px;
+    margin-bottom: 10px;
   }
 }
 @media (min-width: 768px) and (max-width: 1023px) {
@@ -216,6 +218,11 @@ body {
     padding: 30px 100px;
   }
 }
+@media (min-width: 1024px) and (max-width: 1919px) {
+  .intro__video {
+    padding: 30px 60px;
+  }
+}
 video {
   width: 100%;
   max-width: 640px;
@@ -350,7 +357,7 @@ video {
   background-color: #ed1c24;
   color: #fff;
 }
-.footer__disclaimers {
+.disclaimers__list {
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-box;
@@ -369,6 +376,29 @@ video {
   -ms-flex-align: center;
   align-items: center;
 }
+@media (min-width: 768px) and (max-width: 1923px) {
+  .disclaimers__list {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -moz-box-orient: horizontal;
+    -moz-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -moz-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    width: 60%;
+    margin: 0 auto;
+  }
+}
 .disclaimers__item {
   list-style: none;
 }
@@ -382,10 +412,28 @@ video {
 }
 .policy {
   display: none;
+  position: relative;
+}
+.policy:before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 3px;
+  background-color: #acacac;
+  top: -25px;
+  left: 0;
+}
+@media (min-width: 1024px) and (max-width: 1919px) {
+  .policy {
+    display: block;
+    width: 70%;
+    margin: 50px auto;
+  }
 }
 .policy-text {
   font-size: 10px;
   font-weight: 400;
+  color: #acacac;
 }
 .footer__links {
   display: -webkit-box;
@@ -400,6 +448,24 @@ video {
   -moz-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
+}
+@media (min-width: 1024px) and (max-width: 1919px) {
+  .footer__links {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -moz-box-orient: horizontal;
+    -moz-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -moz-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    width: 70%;
+    margin: 0 auto;
+  }
 }
 .link-main-site,
 .link-support {
