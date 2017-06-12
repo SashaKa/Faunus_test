@@ -401,6 +401,7 @@ video {
     justify-content: space-between;
     width: 60%;
     margin: 0 auto;
+    padding-top: 20px;
   }
 }
 .disclaimers__item {
@@ -571,6 +572,10 @@ video {
     width: 70%;
   }
 }
+.modal__form-button:hover {
+  background-color: #95c11f;
+  color: #0d5898;
+}
 .modal__form-subscribe {
   background-color: #004f92;
   display: -webkit-box;
@@ -615,6 +620,10 @@ video {
     width: 70%;
   }
 }
+.modal__close-button {
+  width: 21px;
+  height: 21px;
+}
 .modal__close-button::before,
 .modal__close-button::after {
   content: "";
@@ -622,7 +631,7 @@ video {
   width: 21px;
   height: 2px;
   background-color: #ed5341;
-  top: 40px;
+  top: 26px;
   right: 16px;
 }
 .modal__close-button::before {

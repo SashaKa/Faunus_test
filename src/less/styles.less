@@ -277,6 +277,7 @@ video {
             justify-content: space-between;
             width: 60%;
             margin: 0 auto;
+            padding-top: 20px;
         });
 }
 
@@ -441,6 +442,11 @@ video {
     .screen(320px, 560px, { 
             width: 70%;
         }); 
+
+     &:hover {
+        background-color: #95c11f;
+        color: #0d5898;
+    }
 }
 
 .modal__form-subscribe {
@@ -473,7 +479,10 @@ video {
         }); 
 
 }
-
+.modal__close-button {
+    width: 21px;
+    height: 21px;
+}
 .modal__close-button::before,
 .modal__close-button::after {
     content: "";
@@ -481,8 +490,10 @@ video {
     width: 21px;
     height: 2px;
     background-color:  #ed5341;
-    top: 40px;
+    top: 26px;
     right: 16px;
+
+    
 }
 .modal__close-button::before {
     -webkit-transform: rotate(45deg);
